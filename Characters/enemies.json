@@ -1,0 +1,16 @@
+{
+    "slime": {
+        "name": "Slime",
+        "hp": 20,
+        "attack": 5,
+        "defense": 2,
+        "xp_reward": 10
+    },
+    "goblin": {
+        "name": "Goblin",
+        "hp": 30,
+        "attack": 8,
+        "defense": 3,
+        "xp_reward": 20
+    }
+}
