@@ -215,6 +215,7 @@ class Battle(Menu):
                 elif choice == 'use item':
                     self.add_log(f"[bold magenta]Using Item[/bold magenta]")
                     live.stop()
+                    self.console.clear()
                     self.excute_inventory.use_from_inventory()
                     live.start()
                     time.sleep(0.1)
@@ -475,6 +476,7 @@ def main():
         choice = menu.choose()
 
         if choice == '1':
+            console.clear()
             fight = Battle(player, Enemy.random_enemy(), console)
             if not fight.battle_loop():
                 console.clear()
